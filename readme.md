@@ -2,7 +2,7 @@
 
 Dashboard Tool for Torch
 
-The application utilizs the API to make access and modify the PostgreSQL database.
+The application utilizs an API to access and modify the PostgreSQL database.
 
 Before we can use our frontend, we have to get our API up and running. Check out the readme.md file in the ./api directory on how to setup the API. 
 
