@@ -9,4 +9,6 @@ Before we can use our frontend, we have to get our API up and running. Check out
 Once the API is running, check out the readme.md file in the ./frontend directory on how to serve the frontend on the localhost.
 
 ### Note
+Create a .env file based on the env template file provided before running docker compose.
+
 For development purposes, we use the docker container only for running the API. It is not required to build a docker file for the frontend part of the application.
