@@ -52,6 +52,8 @@ The facility table includes a column named permissions. The number in a user's p
 
 * /criteria_ids/ : Returns payload of the different criterias.
 
+* '/facilities_list/
+
 * /login/ (requires and email and password JSON payload in body) : Returns a JSON payload with a valid token to send to the protected GET routes listed below. Token belongs in header as a Bearer token when sending GET requests to protected routes.
 
 * /update_password/ (requires an email and new password JSON payload in body as well as a valid Bearer token in the request header) : This changes the password of a given user.
@@ -78,8 +80,7 @@ The facility table includes a column named permissions. The number in a user's p
 
 * /population/ (requires queries for parameter: CAH, PPS, Rural, NonRural; as well as quarter and year) : Will return all inputs in a given quarter and year for a given parameter.
 
-app.post('/categories_and_criteria', categoriesAndCriteria);
-app.post('/criteria_ids', criterias);
+
 app.post('/facilities_list', facilitiesList);
 app.post('/population', populationRoute);
 app.post('/target', inputsTargetRoute);
