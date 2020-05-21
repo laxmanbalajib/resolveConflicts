@@ -48,6 +48,10 @@ The facility table includes a column named permissions. The number in a user's p
 
 ## POST
 
+* /categories_and_criteria/ : Returns payload containing data for the categories and criteria tables.
+
+* /criteria_ids/ : Returns payload of the different criterias.
+
 * /login/ (requires and email and password JSON payload in body) : Returns a JSON payload with a valid token to send to the protected GET routes listed below. Token belongs in header as a Bearer token when sending GET requests to protected routes.
 
 * /update_password/ (requires an email and new password JSON payload in body as well as a valid Bearer token in the request header) : This changes the password of a given user.
@@ -66,9 +70,9 @@ The facility table includes a column named permissions. The number in a user's p
 
 * /inputs/?yearBegin=20WW&quarterBegin=X&yearEnd=20YY&quarterEnd=Z with WW and YY = year, and X and Z = quarter : Returns payload of inputs between a given range of quarters.
 
-* /categories_and_criteria/ : Returns payload containing data for the categories and criteria tables.
 
-* /criteria_ids/ : Returns payload of the different criterias.
+
+
 
 * /hospitals/ (requires being logged in as the admin account) : Returns payload of basic hospital data sans-admin.
 
